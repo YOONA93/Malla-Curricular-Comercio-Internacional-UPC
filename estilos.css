@@ -1,4 +1,3 @@
-/* ======== ESTILO GENERAL ======== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -17,14 +16,9 @@ h1 {
 }
 
 h2 {
-  color: #444;
+  color: #555;
 }
 
-p {
-  color: #666;
-}
-
-/* ======== CONTENEDOR DE LA MALLA ======== */
 #malla-container {
   display: flex;
   flex-wrap: wrap;
@@ -42,15 +36,14 @@ p {
 }
 
 .semestre h3 {
-  background-color: #a8d8f0; /* Azul pastel */
+  background-color: #a8d8f0;
   padding: 10px;
   border-radius: 6px;
   margin-bottom: 10px;
 }
 
-/* ======== MATERIAS ======== */
 .materia {
-  background: #e3f2fd; /* Azul claro */
+  background: #e3f2fd;
   margin: 6px 0;
   padding: 8px;
   border-radius: 6px;
@@ -64,20 +57,17 @@ p {
   background: #bbdefb;
 }
 
-/* Materia completada */
 .materia.completada {
-  background: #64b5f6; /* Azul más fuerte */
+  background: #64b5f6;
   color: white;
   text-decoration: line-through;
 }
 
-/* Materia bloqueada */
 .materia.bloqueada {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-/* ======== MENSAJE DE ALERTA ======== */
 #mensaje {
   position: fixed;
   bottom: 20px;
@@ -91,12 +81,9 @@ p {
   font-weight: bold;
 }
 
-.mensaje-oculto {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .semestre {
     width: 90%;
   }
 }
+
