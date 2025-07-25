@@ -1,0 +1,102 @@
+/* ======== ESTILO GENERAL ======== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fddde6; /* Fondo rosado pastel */
+  color: #333;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+}
+
+h1 {
+  color: #2d6a8f;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #444;
+}
+
+p {
+  color: #666;
+}
+
+/* ======== CONTENEDOR DE LA MALLA ======== */
+#malla-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.semestre {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.semestre h3 {
+  background-color: #a8d8f0; /* Azul pastel */
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* ======== MATERIAS ======== */
+.materia {
+  background: #e3f2fd; /* Azul claro */
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  border: 1px solid #90caf9;
+}
+
+.materia:hover {
+  background: #bbdefb;
+}
+
+/* Materia completada */
+.materia.completada {
+  background: #64b5f6; /* Azul más fuerte */
+  color: white;
+  text-decoration: line-through;
+}
+
+/* Materia bloqueada */
+.materia.bloqueada {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ======== MENSAJE DE ALERTA ======== */
+#mensaje {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: none;
+  font-weight: bold;
+}
+
+.mensaje-oculto {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .semestre {
+    width: 90%;
+  }
+}
